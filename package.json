@@ -1,0 +1,32 @@
+{
+  "name": "pdf-resize-cli",
+  "version": "1.0.4",
+  "description": "A simple CLI tool built on top of PDF-lib to modify the paper size of PDF files.",
+  "main": "pdf-resize.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "pdf",
+    "resize",
+    "cli"
+  ],
+  "author": "SeizeDub",
+  "license": "ISC",
+  "dependencies": {
+    "command-line-args": "^5.2.1",
+    "pdf-lib": "^1.17.1"
+  },
+  "bin": {
+    "pdf-resize-cli": "index.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeizeDub/pdf-resize-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SeizeDub/pdf-resize-cli/issues"
+  },
+  "homepage": "https://github.com/SeizeDub/pdf-resize-cli#readme"
+}
