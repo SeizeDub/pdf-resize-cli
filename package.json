@@ -1,6 +1,6 @@
 {
   "name": "pdf-resize-cli",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "A simple CLI tool built on top of PDF-lib to modify the paper size of PDF files.",
   "main": "pdf-resize.js",
   "scripts": {
