@@ -5,7 +5,7 @@ A simple CLI tool built on top of [PDF-lib](https://www.npmjs.com/package/pdf-li
 ## Installation
 
 ```
-npm install -g pdf-resize
+npm install -g pdf-resize-cli
 ```
 
 ## Usage
