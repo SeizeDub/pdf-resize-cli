@@ -26,17 +26,17 @@ async function main(options) {
     const PDFDocument = await PDFLib.PDFDocument.load(file);
     const pages = PDFDocument.getPages();
 
-    const {width: currentWidthInPoints, height: currentHeightInPoints} = pages[0].getSize();
-
-    const unitMultiplicator = getUnitMultiplicator(options.unit);
-
-    const targetWidthInPoints = (options.width * unitMultiplicator) || null;
-    const targetHeightInPoints = (options.height * unitMultiplicator) || null;
-    
-    const ratioWidth = (targetWidthInPoints / currentWidthInPoints) || null;
-    const ratioHeight = (targetHeightInPoints / currentHeightInPoints) || null;
-
     pages.forEach(page => {
+        const {width: currentWidthInPoints, height: currentHeightInPoints} = page.getSize();
+
+        const unitMultiplicator = getUnitMultiplicator(options.unit);
+
+        const targetWidthInPoints = (options.width * unitMultiplicator) || null;
+        const targetHeightInPoints = (options.height * unitMultiplicator) || null;
+        
+        const ratioWidth = (targetWidthInPoints / currentWidthInPoints) || null;
+        const ratioHeight = (targetHeightInPoints / currentHeightInPoints) || null;
+
         page.scale(ratioWidth || ratioHeight, ratioHeight || ratioWidth);
     })
     

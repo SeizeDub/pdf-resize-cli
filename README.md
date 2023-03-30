@@ -25,14 +25,15 @@ pdf-resize -w 21 ./my-pdf-file.pdf
 You can provide **width and height, or just one of them**, the other dimension will be modified according to the same ratio.
 If you don't provide a unit, centimeter will be used.
 
-## Current limitations
-**and possible upcoming functionnalities 🙂**
+## Possible updates
 
-- Only one input file per command.
+- Multiple input file per command.
 
-- Works only for documents with uniform page sizes : all your pages will be resized according to a ratio set using the 1st page only *[desired dimensions / 1st page dimensions]*. Ideally these would be the possible options in the future :
-  + Resize whole document or individual pages according to a fixed ratio (exemple : x2)
+- Different options for resizing :
   + Resize whole document or indivudual pages to a fixed dimension (exemple : 21 x 29.7 cm / A4)
+  + Resize whole document or individual pages according to a fixed ratio (exemple : x2)
+  + Resize whole document or individual pages according to a ratio [given page desired dimension / given page current dimension]
+  
 
 ## Disclaimer
 This is my first serious public project as a developper, I still have a lot to learn. Feel free to report any error, bad practice or bad code.
